@@ -1,0 +1,13 @@
+$assistance = Assistance::findOrFail($request->id);
+
+                    // Delete image files
+                    $imagePath2 = public_path($assistance->imageUpload2);
+
+                    if (file_exists($imagePath2)) {
+                        unlink($imagePath2);
+                    }
+
+                    // Update the database to remove image paths
+                    $assistance->update([
+                        'imageUpload2' => null,
+                    ]);
