@@ -19,6 +19,10 @@ class RegistryAjaxCrudController extends Controller
         if(request()->ajax()) {
            
             return datatables()->of(Registry::select('*'))
+            ->addColumn('created_at', function ($registry) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($registry->created_at));
+            })
             ->addColumn('action', 'admin.registry.registry-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

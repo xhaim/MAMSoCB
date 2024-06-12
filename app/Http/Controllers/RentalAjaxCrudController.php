@@ -19,6 +19,10 @@ class RentalAjaxCrudController extends Controller
          if(request()->ajax()) {
             
              return datatables()->of(Rental::select('*'))
+             ->addColumn('created_at', function ($rental) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($rental->created_at));
+            })
              ->addColumn('action', 'admin/rental/rental-action')
              ->rawColumns(['action'])
              ->addIndexColumn()

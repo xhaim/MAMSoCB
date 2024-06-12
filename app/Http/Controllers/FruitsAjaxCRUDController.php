@@ -14,6 +14,10 @@ class FruitsAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Fruits::select('*'))
+            ->addColumn('created_at', function ($fruits) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($fruits->created_at));
+            })
             ->addColumn('action', 'fruits-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

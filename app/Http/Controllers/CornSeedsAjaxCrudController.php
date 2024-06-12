@@ -21,6 +21,10 @@
          if(request()->ajax()) {
             
              return datatables()->of(CornSeeds::select('*'))
+             ->addColumn('created_at', function ($corn_seeds) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($corn_seeds->created_at));
+            })
              ->addColumn('action', 'admin/cornseeds-action')
              ->rawColumns(['action'])
              ->addIndexColumn()

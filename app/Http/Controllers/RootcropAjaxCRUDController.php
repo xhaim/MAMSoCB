@@ -17,6 +17,10 @@ class RootcropAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(RootCrops::select('*'))
+            ->addColumn('created_at', function ($root) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($root->created_at));
+            })
             ->addColumn('action', 'root-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

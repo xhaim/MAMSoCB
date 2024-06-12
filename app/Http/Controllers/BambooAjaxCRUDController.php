@@ -16,6 +16,10 @@ class BambooAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Bamboo::select('*'))
+            ->addColumn('created_at', function ($bamboo) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($bamboo->created_at));
+            })
             ->addColumn('action', 'bamboo-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

@@ -13,6 +13,10 @@ class RiceHybridAjaxCrudContoller extends Controller
     {
         if (request()->ajax()) {
             return datatables()->of(Ricehybrid::select('*'))
+            ->addColumn('created_at', function ($farmer) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($farmer->created_at));
+            })
                 ->addColumn('action', 'admin/rice/rice-action') // Assuming you have a view file named 'farmers-action.blade.php'
                 ->rawColumns(['action'])
                 ->addIndexColumn()

@@ -21,6 +21,10 @@
      {
          if(request()->ajax()) {
              return datatables()->of(VegSeeds::select('*'))
+             ->addColumn('created_at', function ($veg_seeds) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($veg_seeds->created_at));
+            })
              ->addColumn('action', 'admin/vegseeds-action')
              ->rawColumns(['action'])
              ->addIndexColumn()

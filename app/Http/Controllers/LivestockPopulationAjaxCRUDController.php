@@ -15,6 +15,10 @@ class LivestockPopulationAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Livestockpopulation::select('*'))
+            ->addColumn('created_at', function ($popu) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($popu->created_at));
+            })
             ->addColumn('action', 'population-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

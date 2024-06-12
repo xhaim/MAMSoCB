@@ -20,6 +20,10 @@ class DataTableAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Fishery::select('*'))
+            ->addColumn('created_at', function ($fishery) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($fishery->created_at));
+            })
             ->addColumn('action', 'fishery-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

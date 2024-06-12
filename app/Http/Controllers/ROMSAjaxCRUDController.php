@@ -14,6 +14,10 @@ class ROMSAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Roms::select('*'))
+            ->addColumn('created_at', function ($roms) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($roms->created_at));
+            })
             ->addColumn('action', 'roms-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

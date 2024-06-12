@@ -19,6 +19,10 @@ class FertilizerAjaxCrudController extends Controller
      {
          if(request()->ajax()) {
              return datatables()->of(Fert::select('*'))
+             ->addColumn('created_at', function ($ferts) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($ferts->created_at));
+            })
              ->addColumn('action', 'admin/fertilizer/fert-action')
              ->rawColumns(['action'])
              ->addIndexColumn()

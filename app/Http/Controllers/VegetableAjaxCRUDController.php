@@ -20,6 +20,10 @@ class VegetableAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Vegetable::select('*'))
+            ->addColumn('created_at', function ($veg) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($veg->created_at));
+            })
             ->addColumn('action', 'veg-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

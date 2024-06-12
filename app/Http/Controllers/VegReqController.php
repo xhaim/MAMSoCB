@@ -20,6 +20,10 @@
      {
          if(request()->ajax()) {
              return datatables()->of(Vegreq::select('*'))
+             ->addColumn('created_at', function ($vegreq) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($vegreq->created_at));
+            })
              ->addColumn('action', 'admin/vegreq-action')
              ->rawColumns(['action'])
              ->addIndexColumn()

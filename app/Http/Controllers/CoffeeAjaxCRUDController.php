@@ -15,6 +15,10 @@ class CoffeeAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Coffee::select('*'))
+            ->addColumn('created_at', function ($coffee) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($coffee->created_at));
+            })
             ->addColumn('action', 'coffee-action')
             ->rawColumns(['action'])
             ->addIndexColumn()

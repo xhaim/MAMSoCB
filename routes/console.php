@@ -236,7 +236,228 @@ Artisan::command('transfer:old-data', function () {
 
     $this->info('Transferred data deleted from the source table.');
 
-    // -----------------------------------------------fisheries Schedule-------------------------------------//
+    // -----------------------------------------------fruits Schedule-------------------------------------//
+
+
+    // ------------------------------------------------livestocks  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_livestocks
+    SELECT *
+    FROM livestocks
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM livestocks
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------livestocks Schedule-------------------------------------//
+    
+    // ------------------------------------------------registries  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_registries
+    SELECT *
+    FROM registries
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM registries
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------registries Schedule-------------------------------------//
+    
+    // ------------------------------------------------rentals  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_rentals
+    SELECT *
+    FROM rentals
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM rentals
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------rentals Schedule-------------------------------------//
+    
+    // ------------------------------------------------rice hybrid  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_rice
+    SELECT *
+    FROM ricedistributionhybrid
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM ricedistributionhybrid
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------ricedistributionhybrid Schedule-------------------------------------//
+        
+    // ------------------------------------------------rice seeds  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_rice_seeds
+    SELECT *
+    FROM rice_seeds
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM rice_seeds
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------rice_seeds Schedule-------------------------------------//
+        
+    // ------------------------------------------------roms  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_roms
+    SELECT *
+    FROM roms
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM roms
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------roms Schedule-------------------------------------//
+        
+    // ------------------------------------------------root crops  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_root_crops
+    SELECT *
+    FROM root_crops
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM root_crops
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------root_crops Schedule-------------------------------------//
+        
+    // ------------------------------------------------vaccines  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_vaccs
+    SELECT *
+    FROM vaccs
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM vaccs
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------vaccs Schedule-------------------------------------//
+        
+    // ------------------------------------------------vegetables  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_vegetables
+    SELECT *
+    FROM vegetables
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM vegetables
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------vegetables Schedule-------------------------------------//
+        
+    // ------------------------------------------------vegetable request  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_vegreqs
+    SELECT *
+    FROM vegreqs
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM vegreqs
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------vegreqs Schedule-------------------------------------//
+            
+    // ------------------------------------------------vegetable seeds  Schedule-------------------------------------//
+    DB::statement('
+    INSERT INTO archived_veg_seeds
+    SELECT *
+    FROM veg_seeds
+    WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Old data transferred successfully.');
+
+    // Delete transferred data from the source table
+    DB::statement('
+        DELETE FROM veg_seeds
+        WHERE YEAR(created_at) < YEAR(NOW())
+    ');
+
+    $this->info('Transferred data deleted from the source table.');
+
+    // -----------------------------------------------veg_seeds Schedule-------------------------------------//
 
 })->describe('Transfer data with created_at less than the current year to another table and delete it from the source table');
 

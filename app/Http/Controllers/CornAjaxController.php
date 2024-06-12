@@ -19,6 +19,10 @@ class CornAjaxController extends Controller
      {
          if(request()->ajax()) {
              return datatables()->of(Corn::select('*'))
+             ->addColumn('created_at', function ($corn) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($corn->created_at));
+            })
              ->addColumn('action', 'admin/corn-action')
              ->rawColumns(['action'])
              ->addIndexColumn()

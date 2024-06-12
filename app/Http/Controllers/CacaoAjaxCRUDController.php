@@ -17,6 +17,10 @@ class CacaoAjaxCRUDController extends Controller
     {
         if(request()->ajax()) {
             return datatables()->of(Cacao::select('*'))
+            ->addColumn('created_at', function ($cacao) {
+                // Format the registered_at column as yyyy-mm-dd
+                return date('m-d-Y', strtotime($cacao->created_at));
+            })
             ->addColumn('action', 'cacao-action')
             ->rawColumns(['action'])
             ->addIndexColumn()
