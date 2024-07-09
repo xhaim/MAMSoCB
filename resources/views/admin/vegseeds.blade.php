@@ -64,7 +64,7 @@
                 <th>No. of Seeds Received</th>
                 <th>Date Received</th>
                 <th>Source of Funds</th>
-                <th>Registered-in Date</th>
+                <th>Date created</th>
                 <th width="150px">Action</th>
               </tr>
            </thead>
@@ -79,7 +79,7 @@
                <th>No. of Seeds Received</th>
                <th>Date Received</th>
                <th>Source of Funds</th>
-               <th>Registered-in Date</th>
+               <th>Date created</th>
                <th width="150px">Action</th>
              </tr>
           </thead>
@@ -111,7 +111,7 @@
               <div class="form-group">
                 <label for="no." class="col-sm-8 control-label">No. of Seeds Received</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="seeds_received" name="seeds_received" placeholder="Enter No. of Seeds Received" maxlength="20" >
+                  <input type="text" class="form-control" id="seeds_received" name="seeds_received" placeholder="Enter No. of Seeds Received" maxlength="20" >
                 </div>
               </div>
  

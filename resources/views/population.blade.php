@@ -167,231 +167,231 @@
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Kabaw </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kabawm" name="kabawm" placeholder="Enter Number of Male Kabaw" maxlength="100"  >
+                  <input type="text" class="form-control" id="kabawm" name="kabawm" placeholder="Enter Number of Male Kabaw" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Kabaw </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kabawf" name="kabawf" placeholder="Enter Number of Female Kabaw" maxlength="100"  >
+                  <input type="text" class="form-control" id="kabawf" name="kabawf" placeholder="Enter Number of Female Kabaw" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Kabaw) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalkabaw" name="totalkabaw" placeholder="Enter Total Number of  Kabaw" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalkabaw" name="totalkabaw" placeholder="Enter Total Number of  Kabaw" maxlength="100"  >
                 </div>
               </div>  
               <!-- baka -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label">Male Baka </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="bakam" name="bakam" placeholder="Enter Number of Male Baka" maxlength="100"  >
+                  <input type="text" class="form-control" id="bakam" name="bakam" placeholder="Enter Number of Male Baka" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Baka </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="bakaf" name="bakaf" placeholder="Enter Number of Female Baka" maxlength="100"  >
+                  <input type="text" class="form-control" id="bakaf" name="bakaf" placeholder="Enter Number of Female Baka" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Baka) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalbaka" name="totalbaka" placeholder="Enter Total Number of  Baka" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalbaka" name="totalbaka" placeholder="Enter Total Number of  Baka" maxlength="100"  >
                 </div>
               </div>  
               <!-- baboy -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Anay</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="baboyf" name="baboyf" placeholder="Enter Number of baboyf Baboy" maxlength="100"  >
+                  <input type="text" class="form-control" id="baboyf" name="baboyf" placeholder="Enter Number of baboyf Baboy" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Butakal </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="baboym" name="baboym" placeholder="Enter Number of baboym Baboy" maxlength="100"  >
+                  <input type="text" class="form-control" id="baboym" name="baboym" placeholder="Enter Number of baboym Baboy" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Baboy) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalbaboy" name="totalbaboy" placeholder="Enter Total Number of  Baboy" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalbaboy" name="totalbaboy" placeholder="Enter Total Number of  Baboy" maxlength="100"  >
                 </div>
               </div> 
               <!--kanding  -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Kanding </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kandingm" name="kandingm" placeholder="Enter Number of Male Kanding" maxlength="100"  >
+                  <input type="text" class="form-control" id="kandingm" name="kandingm" placeholder="Enter Number of Male Kanding" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Kanding </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kandingf" name="kandingf" placeholder="Enter Number of Female Kanding" maxlength="100"  >
+                  <input type="text" class="form-control" id="kandingf" name="kandingf" placeholder="Enter Number of Female Kanding" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Kanding) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalkanding" name="totalkanding" placeholder="Enter Total Number of  Kanding" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalkanding" name="totalkanding" placeholder="Enter Total Number of  Kanding" maxlength="100"  >
                 </div>
               </div> 
               <!-- kabayo -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Kabayo </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kabayom" name="kabayom" placeholder="Enter Number of Male Kabayo" maxlength="100"  >
+                  <input type="text" class="form-control" id="kabayom" name="kabayom" placeholder="Enter Number of Male Kabayo" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Kabayo </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kabayof" name="kabayof" placeholder="Enter Number of Male Kabayo" maxlength="100"  >
+                  <input type="text" class="form-control" id="kabayof" name="kabayof" placeholder="Enter Number of Male Kabayo" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Kabayo) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalkabayo" name="totalkabayo" placeholder="Enter Total Number of  Kabayo" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalkabayo" name="totalkabayo" placeholder="Enter Total Number of  Kabayo" maxlength="100"  >
                 </div>
               </div> 
               <!-- iro -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Iro </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="irom" name="irom" placeholder="Enter Number of Male Iro" maxlength="100"  >
+                  <input type="text" class="form-control" id="irom" name="irom" placeholder="Enter Number of Male Iro" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Iro </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="irof" name="irof" placeholder="Enter Number of Iro" maxlength="100"  >
+                  <input type="text" class="form-control" id="irof" name="irof" placeholder="Enter Number of Iro" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Iro) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totaliro" name="totaliro" placeholder="Enter Total Number of  Iro" maxlength="100"  >
+                  <input type="text" class="form-control" id="totaliro" name="totaliro" placeholder="Enter Total Number of  Iro" maxlength="100"  >
                 </div>
               </div> 
               <!-- manok -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Inahan </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="manokf" name="manokf" placeholder="Enter Number of manokf Manok" maxlength="100"  >
+                  <input type="text" class="form-control" id="manokf" name="manokf" placeholder="Enter Number of manokf Manok" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Sonoy </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="manokm" name="manokm" placeholder="Enter Number of manokm Manok" maxlength="100"  >
+                  <input type="text" class="form-control" id="manokm" name="manokm" placeholder="Enter Number of manokm Manok" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Manok) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalmanok" name="totalmanok" placeholder="Enter Total Number of  Manok" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalmanok" name="totalmanok" placeholder="Enter Total Number of  Manok" maxlength="100"  >
                 </div>
               </div> 
               <!-- bebe -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Bebe </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="bebem" name="bebem" placeholder="Enter Number of Male Bebe" maxlength="100"  >
+                  <input type="text" class="form-control" id="bebem" name="bebem" placeholder="Enter Number of Male Bebe" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Bebe </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="bebef" name="bebef" placeholder="Enter Number of Female Bebe" maxlength="100"  >
+                  <input type="text" class="form-control" id="bebef" name="bebef" placeholder="Enter Number of Female Bebe" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Bebe) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalbebe" name="totalbebe" placeholder="Enter Total Number of  Bebe" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalbebe" name="totalbebe" placeholder="Enter Total Number of  Bebe" maxlength="100"  >
                 </div>
               </div> 
               <!-- quail -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Quail </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="quailm" name="quailm" placeholder="Enter Number of Male Quail" maxlength="100"  >
+                  <input type="text" class="form-control" id="quailm" name="quailm" placeholder="Enter Number of Male Quail" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Quail </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="quailf" name="quailf" placeholder="Enter Number of Femaile Quail" maxlength="100"  >
+                  <input type="text" class="form-control" id="quailf" name="quailf" placeholder="Enter Number of Femaile Quail" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Quail) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalquail" name="totalquail" placeholder="Enter Total Number of  Quail" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalquail" name="totalquail" placeholder="Enter Total Number of  Quail" maxlength="100"  >
                 </div>
               </div> 
               <!-- broiler -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Broiler </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="broilerm" name="broilerm" placeholder="Enter Number of Male Broiler" maxlength="100"  >
+                  <input type="text" class="form-control" id="broilerm" name="broilerm" placeholder="Enter Number of Male Broiler" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Broiler </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="broilerf" name="broilerf" placeholder="Enter Number of Female Broiler" maxlength="100"  >
+                  <input type="text" class="form-control" id="broilerf" name="broilerf" placeholder="Enter Number of Female Broiler" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Broiler) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalbroiler" name="totalbroiler" placeholder="Enter Total Number of  Broiler" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalbroiler" name="totalbroiler" placeholder="Enter Total Number of  Broiler" maxlength="100"  >
                 </div>
               </div> 
               <!-- rabbit -->
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Male Rabbit </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="rabbitm" name="rabbitm" placeholder="Enter Number of Male Rabbit" maxlength="100"  >
+                  <input type="text" class="form-control" id="rabbitm" name="rabbitm" placeholder="Enter Number of Male Rabbit" maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Female Rabbit </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="rabbitf" name="rabbitf" placeholder="Enter Number of Female Rabbit " maxlength="100"  >
+                  <input type="text" class="form-control" id="rabbitf" name="rabbitf" placeholder="Enter Number of Female Rabbit " maxlength="100"  >
                 </div>
               </div>  
 
               <div class="form-group">
                 <label for="name" class="col-sm-8 control-label"> Total (Rabbit) </label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="totalrabbit" name="totalrabbit" placeholder="Enter Total Number of  Rabbit" maxlength="100"  >
+                  <input type="text" class="form-control" id="totalrabbit" name="totalrabbit" placeholder="Enter Total Number of  Rabbit" maxlength="100"  >
                 </div>
               </div> 
               

@@ -14,7 +14,7 @@
               <div class="form-group">
                 <label for="rsbsa_id" class="col-sm-8 control-label">RSBSA ID</label>
                 <div class="col-sm-12">
-                    <input type="number" class="form-control" id="rsbsa_id" name="rsbsa_id" placeholder="Enter RSBSA ID" maxlength="100">
+                    <input type="text" class="form-control" id="rsbsa_id" name="rsbsa_id" placeholder="Enter RSBSA ID" maxlength="100">
                     <div id="rsbsa-id-validation-message" class="text-danger"></div>
                 </div>
             </div>
@@ -23,7 +23,7 @@
               <div class="form-group">
                 <label for="generated_id" class="col-sm-8 control-label">Generated ID</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="generated_id" name="generated_id" placeholder="Enter Generated ID" maxlength="100" >
+                  <input type="text" class="form-control" id="generated_id" name="generated_id" placeholder="Enter Generated ID" maxlength="100" >
                 </div>
               </div>
               
@@ -53,7 +53,7 @@
               <div class="form-group">
                 <label for="est_annual_income" class="col-sm-8 control-label">Estimated Annual Income (Php)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="est_annual_income" name="est_annual_income" placeholder="Enter Estimated Annual Income (Php)" maxlength="100" >
+                  <input type="text" class="form-control" id="est_annual_income" name="est_annual_income" placeholder="Enter Estimated Annual Income (Php)" maxlength="100" >
                 </div>
               </div>
               
@@ -95,7 +95,7 @@
               <div class="form-group">
                 <label for="years_of_residency" class="col-sm-8 control-label">Years of Residency</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="years_of_residency" name="years_of_residency" placeholder="Enter Years of Residency" maxlength="100" >
+                  <input type="text" class="form-control" id="years_of_residency" name="years_of_residency" placeholder="Enter Years of Residency" maxlength="100" >
                 </div>
               </div>
           </div>

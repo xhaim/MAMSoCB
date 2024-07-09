@@ -285,12 +285,12 @@ class CsvAssistanceImportController extends Controller
                 
                 'imageUpload2' => $rowData['imageUpload2'],
                 
-               
 
                 // Special Notes
                 'special_notes' => $rowData['special_notes'],
-                'created_at' => $rowData['created_at'],
+                'created_at' => date('Y-m-d H:i:s'), 
                 'updated_at' => $rowData['updated_at'],
+               
             ];
 
             // Insert data into the database

@@ -191,42 +191,42 @@
               <div class="form-group">
                 <label class="col-sm-8 control-label">Newly Planted(# of bamboo)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="newly" name="newly" placeholder="Enter Newly Planted(# of bamboo)" >
+                  <input type="text" class="form-control" id="newly" name="newly" placeholder="Enter Newly Planted(# of bamboo)" >
                 </div>
               </div>
               
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Harvestable(# of bamboo )</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="harvestable" name="harvestable" placeholder="Enter Harvestable(# of bamboo )" maxlength="100" >
+                  <input type="text" class="form-control" id="harvestable" name="harvestable" placeholder="Enter Harvestable(# of bamboo )" maxlength="100" >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Total # of bamboo</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="total" name="total" placeholder="Total # of bamboo" maxlength="100" >
+                  <input type="text" class="form-control" id="total" name="total" placeholder="Total # of bamboo" maxlength="100" >
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-8 control-label">Area(Ha./Sq. M)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="area" name="area" placeholder="Enter Area " maxlength="100">
+                  <input type="text" class="form-control" id="area" name="area" placeholder="Enter Area " maxlength="100">
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-8 control-label">Age of Bamboo Trees</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age of Trees(Years) " >
+                  <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age of Trees(Years) " >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="commodity" class="col-sm-8 control-label">Average No. of Bamboo Pole Per Month</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="per_month" name="per_month" placeholder="Enter No. of bamboo Trees Harvested"  >
+                  <input type="text" class="form-control" id="per_month" name="per_month" placeholder="Enter No. of bamboo Trees Harvested"  >
                 </div>
               </div>
 

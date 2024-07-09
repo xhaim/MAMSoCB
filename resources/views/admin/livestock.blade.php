@@ -69,7 +69,7 @@
                     <th>Commodity Name</th>
                     <th>Number of Head/s</th>
                     <th>Deceased</th>
-                    <th>Registered-in Date</th>
+                    <th>Date created</th>
                     <th width="150px">Action</th>
                   </tr>
               </thead>
@@ -89,7 +89,7 @@
                  <th>Commodity Name</th>
                  <th>Number of Head/s</th>
                  <th>Deceased</th>
-                 <th>Registered-in Date</th>
+                 <th>Date created</th>
                  <th width="150px">Action</th>
                </tr>
             </thead>
@@ -112,7 +112,7 @@
               <div class="form-group">
                 <label for="rsbsa" class="col-sm-8 control-label">RSBSA ID</label>
                 <div class="col-sm-12">
-                    <input type="number" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA No." maxlength="50">
+                    <input type="text" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA No." maxlength="50">
                     <div id="rsbsa-validation-message" class="text-danger"></div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
               <div class="form-group">
                 <label for="generated" class="col-sm-8 control-label">Generated ID</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="generated" name="generated" placeholder="Enter Generated" maxlength="20" >
+                  <input type="text" class="form-control" id="generated" name="generated" placeholder="Enter Generated" maxlength="20" >
                 </div>
               </div>
  
@@ -211,14 +211,14 @@
               <div class="form-group">
                 <label for="head" class="col-sm-8 control-label">Number of head/s</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="head" name="head" placeholder="Enter no. of head/s" maxlength="20" >
+                  <input type="text" class="form-control" id="head" name="head" placeholder="Enter no. of head/s" maxlength="20" >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="deceased" class="col-sm-8 control-label">Deceased</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="deceased" name="deceased" placeholder="Enter no. of deceased" maxlength="50" >
+                  <input type="text" class="form-control" id="deceased" name="deceased" placeholder="Enter no. of deceased" maxlength="50" >
                 </div>
               </div>
               <div class="col-sm-offset-2 col-sm-10" style="margin-top: 20px;">

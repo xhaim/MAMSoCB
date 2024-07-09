@@ -190,42 +190,42 @@
               <div class="form-group">
                 <label class="col-sm-8 control-label">Bearing(# of coffee Trees)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="bearing" name="bearing" placeholder="Enter Bearing(# of coffee Trees)" >
+                  <input type="text" class="form-control" id="bearing" name="bearing" placeholder="Enter Bearing(# of coffee Trees)" >
                 </div>
               </div>
               
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Non-Bearing(# of coffee Trees)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="non_bearing" name="non_bearing" placeholder="Enter Contact Number" maxlength="11" >
+                  <input type="text" class="form-control" id="non_bearing" name="non_bearing" placeholder="Enter Contact Number" maxlength="11" >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Total # of coffee Trees</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="total" name="total" placeholder="Total # of coffee Trees" maxlength="11" >
+                  <input type="text" class="form-control" id="total" name="total" placeholder="Total # of coffee Trees" maxlength="11" >
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-8 control-label">Area</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="area" name="area" placeholder="Enter Area " maxlength="11">
+                  <input type="text" class="form-control" id="area" name="area" placeholder="Enter Area " maxlength="11">
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-8 control-label">Age of Trees(Years)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age of Trees(Years) " >
+                  <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age of Trees(Years) " >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="commodity" class="col-sm-8 control-label">No. of coffee Trees Harvested</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="coffee_trees_harvested" name="coffee_trees_harvested" placeholder="Enter No. of coffee Trees Harvested"  >
+                  <input type="text" class="form-control" id="coffee_trees_harvested" name="coffee_trees_harvested" placeholder="Enter No. of coffee Trees Harvested"  >
                 </div>
               </div>
 
@@ -234,7 +234,7 @@
               <div class="form-group">
                 <label class="col-sm-8 control-label">No. of Kilos Harvested</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="kilo" name="kilo" placeholder="Enter No. of Kilos Harvested " >
+                  <input type="text" class="form-control" id="kilo" name="kilo" placeholder="Enter No. of Kilos Harvested " >
                 </div>
               </div>
 

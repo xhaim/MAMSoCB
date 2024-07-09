@@ -35,8 +35,15 @@ class CsvImportController extends Controller
                 return ($value === 'NULL') ? null : $value;
             }, $rowData);
 
-            // Adjust the keys based on your model's fillable properties
-            $registryData = [
+            // Check if 'rsbsa_id' is already registered
+            $existingRecord = DB::table('registries')
+                ->where('rsbsa_id', $rowData['rsbsa_id'])
+                ->first();
+
+            // If 'rsbsa_id' is not already registered, insert the data
+            if (!$existingRecord) {
+                $registryData = [
+                    
                 'rsbsa_id' => $rowData['rsbsa_id'],
                 'generated_id' => $rowData['generated_id'],
                 'date_enrolled' => $rowData['date_enrolled'],
@@ -306,7 +313,7 @@ class CsvImportController extends Controller
             // Insert data into the database
             DB::table('registries')->insert($registryData);
         }
-
+    }
         return redirect('/registry-crud-datatable')->with('success', 'CSV imported successfully.');
     }
 }

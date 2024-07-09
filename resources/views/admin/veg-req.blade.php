@@ -65,7 +65,7 @@
                 <th>No. of Pack</th>
                 <th>Barangay</th>
                 <th>Contact Number</th>
-                <th>Registered-in Date</th>
+                <th>Date created</th>
                 <th width="150px">Action</th>
               </tr>
            </thead>
@@ -80,7 +80,7 @@
                 <th>No. of Pack</th>
                 <th>Barangay</th>
                 <th>Contact Number</th>
-                <th>Registered-in Date</th>
+                <th>Date created</th>
                 <th width="150px">Action</th>
               </tr>
            </thead>
@@ -111,7 +111,7 @@
               <div class="form-group">
                 <label for="no." class="col-sm-8 control-label">No. of Seeds(pack)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="seeds_received" name="seeds_received" placeholder="Enter No. of Seeds(pack)" maxlength="20" >
+                  <input type="text" class="form-control" id="seeds_received" name="seeds_received" placeholder="Enter No. of Seeds(pack)" maxlength="20" >
                 </div>
               </div>
  
@@ -156,7 +156,7 @@
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Contact Number</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="contact" name="contact" placeholder="Enter Contact Number" maxlength="11" >
+                  <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter Contact Number" maxlength="11" >
                 </div>
               </div>
 

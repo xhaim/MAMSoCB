@@ -27,7 +27,7 @@ function addMemAf() {
             <div class="form-group">
             <label for="member_since" class="col-sm-8 control-label">Member Since</label>
             <div class="col-sm-12">
-                <input type="number"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${MemAfCount}" name="member_since${MemAfCount}" >
+                <input type="text"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${MemAfCount}" name="member_since${MemAfCount}" >
             </div>
             </div>
             

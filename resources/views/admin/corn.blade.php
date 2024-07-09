@@ -73,7 +73,7 @@
                 <th>Cropping Season</th>
                 <th>Area</th>
                 <th>Location</th>
-                <th>Registered-in Date</th>
+                <th>Date created</th>
                 <th width="150px">Action</th>
               </tr>
            </thead>
@@ -96,7 +96,7 @@
                 <th>Cropping Season</th>
                 <th>Area</th>
                 <th>Location</th>
-                <th>Registered-in Date</th>
+                <th>Date created</th>
                 <th width="150px">Action</th>
               </tr>
            </thead>
@@ -121,7 +121,7 @@
               <div class="form-group">
                 <label for="rsbsa" class="col-sm-8 control-label">RSBSA ID</label>
                 <div class="col-sm-12">
-                    <input type="number" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA No." maxlength="50">
+                    <input type="text" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA No." maxlength="50">
                     <div id="rsbsa-validation-message" class="text-danger"></div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
               <div class="form-group">
                 <label for="generated" class="col-md-auto control-label">Generated ID</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="generated" name="generated" placeholder="Enter Generated" maxlength="20" >
+                  <input type="text" class="form-control" id="generated" name="generated" placeholder="Enter Generated" maxlength="20" >
                 </div>
               </div>
  
@@ -245,7 +245,7 @@
               <div class="form-group">
                 <label for="area" class="col-md-auto control-label">Area</label>
                 <div class="col-sm-12">
-                  <input type="number" step="0.01" class="form-control" id="area" name="area" placeholder="Enter no. of hectare/s" maxlength="20" >
+                  <input type="text" step="0.01" class="form-control" id="area" name="area" placeholder="Enter no. of hectare/s" maxlength="20" >
                 </div>
               </div>
 

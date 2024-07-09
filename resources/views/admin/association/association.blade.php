@@ -85,7 +85,7 @@
                 <th>Contact</th>
                 <th>Number of farmers</th>
                 <th>Date registered</th>
-                <th>Registered-in Date</th>
+                <th>Date created</th>
                 <th width="150px">Action</th>
               </tr>
            </thead>
@@ -101,7 +101,7 @@
                <th>Contact</th>
                <th>Number of farmers</th>
                <th>Date registered</th>
-               <th>Registered-in Date</th>
+               <th>Date created</th>
                <th width="150px">Action</th>
              </tr>
           </thead>
@@ -175,14 +175,14 @@
               <div class="form-group">
                 <label for="age" class="col-sm-8 control-label">Contact number</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="contact" name="contact" placeholder="Enter Contact No." maxlength="2" >
+                  <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter Contact No." maxlength="2" >
                 </div>
               </div>
       
               <div class="form-group">
                 <label for="area" class="col-sm-8 control-label">Number of farmers</label>
                 <div class="col-sm-12">
-                  <input type="number" step="0.01" class="form-control" id="no_of_farmers" name="no_of_farmers" placeholder="Enter no. of farmers" maxlength="20" >
+                  <input type="text" step="0.01" class="form-control" id="no_of_farmers" name="no_of_farmers" placeholder="Enter no. of farmers" maxlength="20" >
                 </div>
               </div>
 

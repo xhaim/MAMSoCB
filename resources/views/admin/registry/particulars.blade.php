@@ -21,14 +21,14 @@
   <div class="form-group">
     <label for="title_no" class="col-sm-8 control-label">Title No.</label>
     <div class="col-sm-12">
-      <input type="number" class="form-control" id="title_no" name="title_no" placeholder="Enter Title No." maxlength="255" >
+      <input type="text" class="form-control" id="title_no" name="title_no" placeholder="Enter Title No." maxlength="255" >
     </div>
   </div>
   
   <div class="form-group">
     <label for="tax_declarration_no" class="col-sm-8 control-label">Tax Declaration No</label>
     <div class="col-sm-12">
-      <input type="number" class="form-control" id="tax_declarration_no" name="tax_declarration_no" placeholder="Enter Tax Declaration No" maxlength="100" >
+      <input type="text" class="form-control" id="tax_declarration_no" name="tax_declarration_no" placeholder="Enter Tax Declaration No" maxlength="100" >
     </div>
   </div>
   
@@ -45,7 +45,7 @@
           <div class="form-group form-check">
               <input type="checkbox" id="rentCheckbox" class="form-check-input" name="tenure" value="Rent" onclick="handleCheckboxChange(this.value)">
               <label for="rentCheckbox" class="form-check-label">Rent</label>
-              <input type="number" id="rentYears" class="form-control" placeholder="Number of years renting" style="display: none;" oninput="setRentCheckboxValue(this.value)">
+              <input type="text" id="rentYears" class="form-control" placeholder="Number of years renting" style="display: none;" oninput="setRentCheckboxValue(this.value)">
           </div>
   
           <div class="form-group form-check">
@@ -82,7 +82,7 @@
 <div class="form-group">
     <label for="hectares" class="col-sm-8 control-label">Area(Hectares)</label>
     <div class="col-sm-12">
-      <input type="number" class="form-control" id="hectares" name="hectares" placeholder="Enter Area(Hectares)" maxlength="100" >
+      <input type="text" class="form-control" id="hectares" name="hectares" placeholder="Enter Area(Hectares)" maxlength="100" >
     </div>
   </div>
   

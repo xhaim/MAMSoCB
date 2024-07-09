@@ -167,14 +167,14 @@
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Age (Yr)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="ageyr" name="ageyr" placeholder="Enter Age(Yr)"   >
+                  <input type="text" class="form-control" id="ageyr" name="ageyr" placeholder="Enter Age(Yr)"   >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Age(Month)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="age_month" name="age_month" placeholder="Enter Age(Month)"   >
+                  <input type="text" class="form-control" id="age_month" name="age_month" placeholder="Enter Age(Month)"   >
                 </div>
               </div>
 

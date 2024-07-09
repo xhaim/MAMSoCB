@@ -143,7 +143,7 @@
               <div class="form-group">
                 <label for="barangay" class="col-sm-8 control-label">Animal ID</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="animal_id" name="animal_id" placeholder="Enter Animal ID" maxlength="100" >
+                  <input type="text" class="form-control" id="animal_id" name="animal_id" placeholder="Enter Animal ID" maxlength="100" >
                 </div>
               </div>
  
@@ -157,7 +157,7 @@
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Yr. Born</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="born" name="born" placeholder="Enter Yr. Born"   >
+                  <input type="text" class="form-control" id="born" name="born" placeholder="Enter Yr. Born"   >
                 </div>
               </div>
 
@@ -236,7 +236,7 @@
               <div class="form-group">
                 <label class="col-sm-8 control-label">No. of straws used</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="straws" name="straws" placeholder="Enter No. of straws used " >
+                  <input type="text" class="form-control" id="straws" name="straws" placeholder="Enter No. of straws used " >
                 </div>
               </div>
 

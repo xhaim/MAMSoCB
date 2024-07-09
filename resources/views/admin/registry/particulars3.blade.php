@@ -21,14 +21,14 @@
 <div class="form-group">
   <label for="title_no3" class="col-sm-8 control-label">Title No.</label>
   <div class="col-sm-12">
-    <input type="number" class="form-control" id="title_no3" name="title_no3" placeholder="Enter Title No." maxlength="255" >
+    <input type="text" class="form-control" id="title_no3" name="title_no3" placeholder="Enter Title No." maxlength="255" >
   </div>
 </div>
 
 <div class="form-group">
   <label for="tax_declarration_no3" class="col-sm-8 control-label">Tax Declaration No</label>
   <div class="col-sm-12">
-    <input type="number" class="form-control" id="tax_declarration_no3" name="tax_declarration_no3" placeholder="Enter Tax Declaration No" maxlength="100" >
+    <input type="text" class="form-control" id="tax_declarration_no3" name="tax_declarration_no3" placeholder="Enter Tax Declaration No" maxlength="100" >
   </div>
 </div>
 
@@ -45,7 +45,7 @@
         <div class="form-group form-check">
             <input type="checkbox" id="rentCheckbox3" class="form-check-input" name="tenure3" value="Rent" onclick="handleCheckboxChange3(this.value)">
             <label for="rentCheckbox3" class="form-check-label">Rent</label>
-            <input type="number" id="rentYears3" class="form-control" placeholder="Number of years renting" style="display: none;" oninput="setRent2CheckboxValue(this.value)">
+            <input type="text" id="rentYears3" class="form-control" placeholder="Number of years renting" style="display: none;" oninput="setRent2CheckboxValue(this.value)">
         </div>
 
         <div class="form-group form-check">
@@ -85,7 +85,7 @@
 <div class="form-group">
   <label for="hectares" class="col-sm-8 control-label">Area(Hectares)</label>
   <div class="col-sm-12">
-    <input type="number" class="form-control" id="hectares3" name="hectares3" placeholder="Enter Area(Hectares)" maxlength="100" >
+    <input type="text" class="form-control" id="hectares3" name="hectares3" placeholder="Enter Area(Hectares)" maxlength="100" >
   </div>
 </div>
 

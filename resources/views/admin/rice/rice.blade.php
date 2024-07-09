@@ -125,7 +125,7 @@
             <div class="form-group">
               <label for="rsbsa" class="col-sm-8 control-label">RSBSA No.</label>
               <div class="col-sm-12">
-                  <input type="number" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA No." maxlength="50">
+                  <input type="text" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA No." maxlength="50">
                   <div id="rsbsa-validation-message" class="text-danger"></div>
               </div>
           </div>
@@ -263,7 +263,7 @@
             <div class="form-group">
               <label for="quantity" class="col-sm-8 control-label">Quantity</label>
               <div class="col-sm-12">
-                <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter Quantity" maxlength="20" >
+                <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Enter Quantity" maxlength="20" >
               </div>
             </div>
 

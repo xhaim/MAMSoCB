@@ -211,7 +211,7 @@
             <div class="form-group">
             <label for="age" class="col-sm-8 control-label">Age</label>
             <div class="col-sm-12">
-                <input type="number" class="form-control" id="age${i}" name="age${i}" placeholder="Enter Age" >
+                <input type="text" class="form-control" id="age${i}" name="age${i}" placeholder="Enter Age" >
             </div>
             </div>
 
@@ -287,7 +287,7 @@
                             <div class="form-group">
                             <label for="member_since" class="col-sm-8 control-label">Member Since</label>
                             <div class="col-sm-12">
-                                <input type="number"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${m}" name="member_since${m}" >
+                                <input type="text"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${m}" name="member_since${m}" >
                             </div>
                             </div>
                             

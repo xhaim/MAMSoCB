@@ -168,7 +168,7 @@
                 <div class="form-row">
                   <div class="form-group col-md-4">
                       <label for="rsbsa">RSBSA ID.</label>
-                      <input type="number" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA ID">
+                      <input type="text" class="form-control" id="rsbsa" name="rsbsa" placeholder="Enter RSBSA ID">
                   </div>
                   
                   <!-- Application group with Date and Time -->
@@ -219,11 +219,11 @@
                 <div class="form-row">
                   <div class="form-group col-md-4">
                       <label for="name">No. of Dependents/Children</label>
-                      <input type="number" class="form-control" id="dependents" name="dependents" placeholder="Enter No. of Dependents/Children" >
+                      <input type="text" class="form-control" id="dependents" name="dependents" placeholder="Enter No. of Dependents/Children" >
                   </div>
                   <div class="form-group col-md-4">
                       <label>Estimated Income PHP</label>
-                      <input type="number" class="form-control" id="income" name="income" placeholder="Enter Estimated Income">
+                      <input type="text" class="form-control" id="income" name="income" placeholder="Enter Estimated Income">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="email">Home Address</label>
@@ -258,14 +258,14 @@
                         <div class="form-group col-md-6">
                           <label for="title_no" class="col-sm-8 control-label">Title No.</label>
                           <div class="col-sm-12">
-                            <input type="number" class="form-control" id="title_no" name="title_no" placeholder="Enter Title No." maxlength="255" >
+                            <input type="text" class="form-control" id="title_no" name="title_no" placeholder="Enter Title No." maxlength="255" >
                           </div>
                         </div>
                         
                         <div class="form-group col-md-6">
                           <label for="tax_declarration_no" class="col-sm-8 control-label">Tax Declaration No</label>
                           <div class="col-sm-12">
-                            <input type="number" class="form-control" id="tax_declarration_no" name="tax_declarration_no" placeholder="Enter Tax Declaration No" maxlength="100" >
+                            <input type="text" class="form-control" id="tax_declarration_no" name="tax_declarration_no" placeholder="Enter Tax Declaration No" maxlength="100" >
                           </div>
                         </div>
                     </div>
@@ -288,7 +288,7 @@
                                           <div class="form-check">
                                               <input type="checkbox" id="rentCheckbox" class="form-check-input" name="tenure" value="Rent" onclick="handleCheckboxChange(this.value)">
                                               <label for="rentCheckbox" class="form-check-label">Rent</label>
-                                              <input type="number" id="rentYears" class="form-control" placeholder="Number of years renting" style="display: none; width:100px; position:sticky; top:100px; z-index:9px;" oninput="setRentCheckboxValue(this.value)">
+                                              <input type="text" id="rentYears" class="form-control" placeholder="Number of years renting" style="display: none; width:100px; position:sticky; top:100px; z-index:9px;" oninput="setRentCheckboxValue(this.value)">
                                           </div>
                                       </div>
                   

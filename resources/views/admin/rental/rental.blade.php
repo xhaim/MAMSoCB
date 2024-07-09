@@ -91,7 +91,7 @@
                   <th>Actual Land Area of Farm</th>
                   <th>Date Inspected</th>
                  
-                  <th>Registered-in Date</th>
+                  <th>Date created</th>
                   <th width="150px">Action</th>
                 </tr>
             </thead>
@@ -111,7 +111,7 @@
               <th>Actual Land Area of Farm</th>
               <th>Date Inspected</th>
              
-              <th>Registered-in Date</th>
+              <th>Date created</th>
               <th width="150px">Action</th>
             </tr>
           </thead>
@@ -168,14 +168,14 @@
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Contact number</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="contact" name="contact" placeholder="Enter Contact No." maxlength="2"    >
+                  <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter Contact No." maxlength="2"    >
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="actual_land_area_of_farm" class="col-sm-8 control-label">Actual Land Area of Farm</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="actual_land_area_of_farm" name="actual_land_area_of_farm" placeholder="Enter Actual Land Area of Farm"   maxlength="100"  >
+                  <input type="text" class="form-control" id="actual_land_area_of_farm" name="actual_land_area_of_farm" placeholder="Enter Actual Land Area of Farm"   maxlength="100"  >
                 </div>
               </div>
 
@@ -196,7 +196,7 @@
               <div class="form-group">
                 <label for="requirement" class="col-sm-8 control-label">Fuel Requirement</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="fuel_requirement" name="fuel_requirement" placeholder="Enter Fuel Requirement "   maxlength="100"    >
+                  <input type="text" class="form-control" id="fuel_requirement" name="fuel_requirement" placeholder="Enter Fuel Requirement "   maxlength="100"    >
                 </div>
               </div>
 
@@ -209,7 +209,7 @@
               <div class="form-group">
                 <label for="operation" class="col-sm-8 control-label">Estimated Hours of operation</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="hours_of_operation" name="hours_of_operation" placeholder="Enter Estimated Hours of operation "   maxlength="100"    >
+                  <input type="text" class="form-control" id="hours_of_operation" name="hours_of_operation" placeholder="Enter Estimated Hours of operation "   maxlength="100"    >
                 </div>
               </div>
 
@@ -242,21 +242,21 @@
               <div class="form-group">
                 <label for="area" class="col-sm-8 control-label">Land Area Requested for Operation</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="area" name="area" placeholder="Enter Land Area Requested for Operation"   maxlength="100"  >
+                  <input type="text" class="form-control" id="area" name="area" placeholder="Enter Land Area Requested for Operation"   maxlength="100"  >
                 </div>
               </div>
               
               <div class="form-group">
                 <label for="rental_rate" class="col-sm-8 control-label">Rental Rate (ha)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="rental_rate" name="rental_rate" placeholder="Enter Rental Rate/ha"   maxlength="100"  >
+                  <input type="text" class="form-control" id="rental_rate" name="rental_rate" placeholder="Enter Rental Rate/ha"   maxlength="100"  >
                 </div>
               </div>
               
               <div class="form-group">
                 <label for="total_rental_amount" class="col-sm-8 control-label">Total Amount of Rental</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="total_rental_amount" name="total_rental_amount" placeholder="Enter Total Amount of Rental"   maxlength="100"  >
+                  <input type="text" class="form-control" id="total_rental_amount" name="total_rental_amount" placeholder="Enter Total Amount of Rental"   maxlength="100"  >
                 </div>
               </div>
           </div>
@@ -289,7 +289,7 @@
               <div class="form-group">
                 <label for="payment_amount" class="col-sm-8 control-label">Amount</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="payment_amount" name="payment_amount" placeholder="Enter Amount"   maxlength="100"  >
+                  <input type="text" class="form-control" id="payment_amount" name="payment_amount" placeholder="Enter Amount"   maxlength="100"  >
                 </div>
               </div>
               <div class="form-group">
@@ -309,7 +309,7 @@
               <div class="form-group">
                 <label for="funds_available" class="col-sm-8 control-label">Funds Available</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="funds_available" name="funds_available" placeholder="Enter Funds Available"   maxlength="100"  >
+                  <input type="text" class="form-control" id="funds_available" name="funds_available" placeholder="Enter Funds Available"   maxlength="100"  >
                 </div>
               </div>
           </div>
@@ -362,7 +362,7 @@
               <div class="form-group">
                 <label for="actual_land_area_served" class="col-sm-8 control-label">Actual Land Area Served</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="actual_land_area_served" name="actual_land_area_served" placeholder="Enter Actual Land Area Served"   maxlength="100"  >
+                  <input type="text" class="form-control" id="actual_land_area_served" name="actual_land_area_served" placeholder="Enter Actual Land Area Served"   maxlength="100"  >
                 </div>
               </div>
           </div>
@@ -374,7 +374,7 @@
             <div class="form-group">
               <label for="actual_hours_of_operation" class="col-sm-8 control-label">Actual Hours of Operation</label>
               <div class="col-sm-12">
-                <input type="number" class="form-control" id="actual_hours_of_operation" name="actual_hours_of_operation" placeholder="Enter Actual Hours of Operation"   maxlength="100"  >
+                <input type="text" class="form-control" id="actual_hours_of_operation" name="actual_hours_of_operation" placeholder="Enter Actual Hours of Operation"   maxlength="100"  >
               </div>
             </div>
             

@@ -193,7 +193,7 @@
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Contact Number</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="contact" name="contact" placeholder="Enter Contact Number" maxlength="11" >
+                  <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter Contact Number" maxlength="11" >
                 </div>
               </div>
 
@@ -207,21 +207,21 @@
               <div class="form-group">
                 <label class="col-sm-8 control-label">Area</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="area" name="area" placeholder="Enter Area " >
+                  <input type="text" class="form-control" id="area" name="area" placeholder="Enter Area " >
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-8 control-label">Number of Hills</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="number_of_hills" name="number_of_hills" placeholder="Enter Number of Hills " >
+                  <input type="text" class="form-control" id="number_of_hills" name="number_of_hills" placeholder="Enter Number of Hills " >
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="col-sm-8 control-label">Production/Month (kgs)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="production" name="production" placeholder="Enter Production/Month (kgs) " >
+                  <input type="text" class="form-control" id="production" name="production" placeholder="Enter Production/Month (kgs) " >
                 </div>
               </div>
 
@@ -235,7 +235,7 @@
               <div class="form-group">
                 <label class="col-sm-8 control-label">Area for Expansion(in has.)</label>
                 <div class="col-sm-12">
-                  <input type="number" class="form-control" id="expansionarea" name="expansionarea" placeholder="Enter Area for Expansion(in has.) " >
+                  <input type="text" class="form-control" id="expansionarea" name="expansionarea" placeholder="Enter Area for Expansion(in has.) " >
                 </div>
               </div>
               <div class="col-sm-offset-2 col-sm-10">

@@ -43,7 +43,7 @@
     <div class="form-group">
       <label for="age" class="col-sm-8 control-label">Age</label>
       <div class="col-sm-12">
-        <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age" >
+        <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age" >
       </div>
     </div>
 

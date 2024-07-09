@@ -270,13 +270,13 @@
               <div class="form-group">
                 <label for="contact_no" class="col-sm-8 control-label">Contact No.</label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="contact_no" name="contact_no" maxlength="11" placeholder="Enter Contact No.">
+                  <input type="text" class="form-control" id="contact_no" name="contact_no" maxlength="11" placeholder="Enter Contact No.">
                 </div>
               </div>
               <div class="form-group">
                 <label for="contact_no" class="col-sm-8 control-label">Resident of the Municipality since</label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="resident" name="resident" maxlength="11" placeholder="Enter Years of Residency">
+                  <input type="text" class="form-control" id="resident" name="resident" maxlength="11" placeholder="Enter Years of Residency">
                 </div>
               </div>
               <div class="form-group">
@@ -344,7 +344,7 @@
               <div class="form-group">
                 <label for="no_of_children" class="col-sm-8 control-label">No. of Children</label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="no_of_children" name="no_of_children" placeholder="Enter No. of Children">
+                  <input type="text" class="form-control" id="no_of_children" name="no_of_children" placeholder="Enter No. of Children">
                 </div>
               </div>
 
@@ -414,7 +414,7 @@
               <div class="form-group">
                 <label for="contact" class="col-sm-8 control-label">Contact No. </label>
                 <div class="col-sm-10">
-                  <input type="number" class="form-control" id="contact" name="contact" placeholder="Enter Contact No.">
+                  <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter Contact No.">
                 </div>
               </div>
               <div class="form-group">
@@ -516,7 +516,7 @@
       <div class="form-group">
         <label for="member_since" class="col-sm-8 control-label">Member Since</label>
         <div class="col-sm-12">
-          <input type="number"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since" name="member_since" >
+          <input type="text"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since" name="member_since" >
         </div>
       </div>
 
@@ -681,7 +681,7 @@
                             <div class="form-group">
                             <label for="member_since" class="col-sm-8 control-label">Member Since</label>
                             <div class="col-sm-12">
-                                <input type="number"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${m}" name="member_since${m}" >
+                                <input type="text"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${m}" name="member_since${m}" >
                             </div>
                             </div>
 
@@ -1008,7 +1008,7 @@ function addMemAf() {
             <div class="form-group">
             <label for="member_since" class="col-sm-8 control-label">Member Since</label>
             <div class="col-sm-12">
-                <input type="number"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${MemAfCount}" name="member_since${MemAfCount}" >
+                <input type="text"  placeholder="Enter year" min="1900" max="2100" class="form-control" id="member_since${MemAfCount}" name="member_since${MemAfCount}" >
             </div>
             </div>
 
