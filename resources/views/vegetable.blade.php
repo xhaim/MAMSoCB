@@ -431,53 +431,52 @@
                     // $('#vegBar').html("Edit veg");
                     $('#vegprint-modal').modal('show');
             }
-
             function printDatas() {
-                    // Get selected barangay value
-                    var selectedBarangay = $('#barangay').val();
+    var selectedBarangay = $('#barangay').val();
+    var startDate = $('#start_date').val();
+    var endDate = $('#end_date').val();
 
-                    if(selectedBarangay !== "All" && selectedBarangay !== null){
-                        // Make AJAX request based on the selected barangay
-                        printDataTableBar(selectedBarangay);
-                    }else if(selectedBarangay == "All"){
-                        // Make AJAX request based on the selected barangay
-                        printDataTable();
-                    }
+    console.log('Selected Barangay:', selectedBarangay);
+    console.log('Start Date:', startDate);
+    console.log('End Date:', endDate);
 
-                    // Close the modal (optional)
-                    $('#vegprint-modal').modal('hide');
-            }
-            // AJAX request to fetch data from the server
-            function printDataTable() {
-                    $.ajax({
-                        url: '/print-veg', // Replace with your Laravel route URL to fetch data
-                        method: 'GET',
-                        success: function (data) {
-                            // Once the data is fetched successfully, you can proceed to print it
-                            printData(data);
-                        },
-                        error: function (error) {
-                            console.error('Error fetching data:', error);
-                        }
-                    });
-                }
+    if (selectedBarangay !== "All" && selectedBarangay !== null) {
+        printDataTableBar(selectedBarangay, startDate, endDate);
+    } else if (selectedBarangay == "All") {
+        printDataTable(startDate, endDate);
+    }
 
-                // AJAX request to fetch data from the server
-            function printDataTableBar(selectedBarangay) {
-                    $.ajax({
-                        url: '/print-vegbar', // Replace with your Laravel route URL to fetch data
-                        method: 'GET',
-                        data: { barangay: selectedBarangay },
-                        success: function (data) {
-                            // Once the data is fetched successfully, you can proceed to print it
-                            printData(data);
-                        },
-                        error: function (error) {
-                            console.error('Error fetching data:', error);
-                        }
-                    });
-                }
+    // Close the modal (optional)
+    $('#vegprint-modal').modal('hide');
+}
 
+function printDataTable(startDate, endDate) {
+    $.ajax({
+        url: '/print-veg', // Replace with your Laravel route URL to fetch data
+        method: 'GET',
+        data: { start_date: startDate, end_date: endDate },
+        success: function (data) {
+            printData(data);
+        },
+        error: function (error) {
+            console.error('Error fetching data:', error);
+        }
+    });
+}
+
+function printDataTableBar(selectedBarangay, startDate, endDate) {
+    $.ajax({
+        url: '/print-vegbar', // Replace with your Laravel route URL to fetch data
+        method: 'GET',
+        data: { barangay: selectedBarangay, start_date: startDate, end_date: endDate },
+        success: function (data) {
+            printData(data);
+        },
+        error: function (error) {
+            console.error('Error fetching data:', error);
+        }
+    });
+}
 
           // Function to print the data fetched from the server
           function printData(data) {

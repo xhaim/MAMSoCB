@@ -13,18 +13,18 @@ return new class extends Migration
     {
         Schema::create('root_crops', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')-> nullable();
             $table->string('barangay');
-            $table->string('municipality');
-            $table->string('sex');
-            $table->string('affiliation');
-            $table->string('contact');
-            $table->string('commodity');
-            $table->string('area');
-            $table->string('number_of_hills');
-            $table->string('production');
-            $table->string('market');
-            $table->string('expansionarea');
+            $table->string('municipality')-> nullable();
+            $table->string('sex')-> nullable();
+            $table->string('affiliation')-> nullable();
+            $table->string('contact')-> nullable();
+            $table->string('commodity')-> nullable();
+            $table->string('area')-> nullable();
+            $table->string('number_of_hills')-> nullable();
+            $table->string('production')-> nullable();
+            $table->string('market')-> nullable();
+            $table->string('expansionarea')-> nullable();
             $table->timestamps();
         });
     }

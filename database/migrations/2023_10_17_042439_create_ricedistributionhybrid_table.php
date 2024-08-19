@@ -13,19 +13,19 @@ return new class extends Migration
     {
         Schema::create('ricedistributionhybrid', function (Blueprint $table) {
             $table->id();
-            $table->string('rsbsa');
-            $table->string('name_first');
-            $table->string('name_middle');
-            $table->string('name_last');
+            $table->string('rsbsa')-> nullable();
+            $table->string('name_first')-> nullable();
+            $table->string('name_middle')-> nullable();
+            $table->string('name_last')-> nullable();
             $table->string('suffix')->nullable();
             $table->string('barangay');
-            $table->string('farm_location');
-            $table->date('birthdate');
+            $table->string('farm_location')-> nullable();
+            $table->date('birthdate')-> nullable();
             $table->decimal('farm_area', 8, 2);
             $table->enum('sex', ['Male', 'Female']);
-            $table->json('membership');// Assuming equipment is stored as JSON
-            $table->integer('quantity');
-            $table->date('date_received');
+            $table->json('membership')-> nullable();// Assuming equipment is stored as JSON
+            $table->integer('quantity')-> nullable();
+            $table->date('date_received')-> nullable();
             $table->timestamps();
         });
     }

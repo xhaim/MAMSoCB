@@ -44,6 +44,20 @@
                 </select>
             </div>
         </div>
+        <div class="form-group">
+          <label for="start_date" class="col-sm-8 control-label">Start Date</label>
+          <div class="col-sm-12">
+              <input type="date" class="form-control" id="start_date" name="start_date">
+          </div>
+      </div>
+      
+      <div class="form-group">
+          <label for="end_date" class="col-sm-8 control-label">End Date</label>
+          <div class="col-sm-12">
+              <input type="date" class="form-control" id="end_date" name="end_date">
+          </div>
+      </div>
+      
             <div class="col-sm-offset-2 col-sm-10" style="margin-top: 20px;">
               <button type="button" class="btn btn-success" onclick="printDatas()">Print</button>
             </div>

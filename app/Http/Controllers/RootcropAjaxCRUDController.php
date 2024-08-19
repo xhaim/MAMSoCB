@@ -188,41 +188,54 @@ class RootcropAjaxCRUDController extends Controller
     
     // Start of print // Start of print // Start of print   
 
-    public function fetchData() {
-        // Retrieve data from your model or source (e.g., database)
-        $data = RootCrops::all(); // Replace YourModel with your actual model
-
-        // Sort the data by the 'Barangay' column alphabetically
-        $data = $data->sortBy('barangay')->values();
-
+    public function fetchData(Request $request) {
+        $startDate = $request->input('start_date');
+        $endDate = $request->input('end_date');
+    
+        $query = RootCrops::query();
+    
+        if ($startDate && $endDate) {
+            $query->whereBetween('created_at', [$startDate, $endDate]);
+        }
+    
+        $data = $query->orderBy('barangay')->get();
+    
         // Reset the IDs and update to start from 1
         $data = $data->map(function ($item, $index) {
             $item['id'] = $index + 1;
             return $item;
         });
-
+    
         return response()->json($data);
     }
-
-    public function fetchSpecificBarangay(Request $request) {
-    $barangayName = $request->input('barangay');
     
-    if ($barangayName) {
-        // Fetch data for the specific barangay
-        $data = RootCrops::where('barangay', $barangayName)->get();
-    } else {
-        // Fetch data for all barangays
-        $data = RootCrops::all();
+    public function fetchSpecificBarangay(Request $request) {
+        $barangayName = $request->input('barangay');
+        $startDate = $request->input('start_date');
+        $endDate = $request->input('end_date');
+    
+        $query = RootCrops::query();
+    
+        if ($barangayName) {
+            $query->where('barangay', $barangayName);
+        }
+    
+        if ($startDate && $endDate) {
+            $query->whereBetween('created_at', [$startDate, $endDate]);
+        }
+    
+        $data = $query->get();
+    
+        // Reset the IDs and update to start from 1
+        $data = $data->map(function ($item, $index) {
+            $item['id'] = $index + 1;
+            return $item;
+        });
+    
+        return response()->json($data);
     }
+    
 
-    // Reset the IDs and update to start from 1
-    $data = $data->map(function ($item, $index) {
-        $item['id'] = $index + 1;
-        return $item;
-    });
-
-    return response()->json($data);
-    }
     //end of print //end of print // end of print // end of print
 
 

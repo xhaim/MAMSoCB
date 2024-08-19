@@ -180,125 +180,114 @@
     }
 
     function printDatas() {
-            // Get selected barangay value
-            var selectedBarangay = $('#barangay').val();
+    var selectedBarangay = $('#barangay').val();
+    var startDate = $('#start_date').val();
+    var endDate = $('#end_date').val();
 
-            if(selectedBarangay !== "All" && selectedBarangay !== null){
-                // Make AJAX request based on the selected barangay
-                printDataTableBar(selectedBarangay);
-            }else if(selectedBarangay == "All"){
-                // Make AJAX request based on the selected barangay
-                printDataTable();
-            }
+    console.log('Selected Barangay:', selectedBarangay);
+    console.log('Start Date:', startDate);
+    console.log('End Date:', endDate);
 
-            // Close the modal (optional)
-            $('#assocprint-modal').modal('hide');
+    if (selectedBarangay !== "All" && selectedBarangay !== null) {
+        printDataTableBar(selectedBarangay, startDate, endDate);
+    } else if (selectedBarangay == "All") {
+        printDataTable(startDate, endDate);
     }
-     // AJAX request to fetch data from the server
-     function printDataTable() {
-            $.ajax({
-                url: '/print-assoc', // Replace with your Laravel route URL to fetch data
-                method: 'GET',
-                success: function (data) {
-                    // Once the data is fetched successfully, you can proceed to print it
-                    printData(data);
-                },
-                error: function (error) {
-                    console.error('Error fetching data:', error);
-                }
-            });
-        }
 
-        // AJAX request to fetch data from the server
-     function printDataTableBar(selectedBarangay) {
-            $.ajax({
-                url: '/print-assocbar', // Replace with your Laravel route URL to fetch data
-                method: 'GET',
-                data: { barangay: selectedBarangay },
-                success: function (data) {
-                    // Once the data is fetched successfully, you can proceed to print it
-                    printData(data);
-                },
-                error: function (error) {
-                    console.error('Error fetching data:', error);
+    // Close the modal (optional)
+    $('#assocprint-modal').modal('hide');
+}
+
+function printDataTable(startDate, endDate) {
+    $.ajax({
+        url: '/print-assoc', // Replace with your Laravel route URL to fetch data
+        method: 'GET',
+        data: { start_date: startDate, end_date: endDate },
+        success: function (data) {
+            printData(data);
+        },
+        error: function (error) {
+            console.error('Error fetching data:', error);
+        }
+    });
+}
+
+function printDataTableBar(selectedBarangay, startDate, endDate) {
+    $.ajax({
+        url: '/print-assocbar', // Replace with your Laravel route URL to fetch data
+        method: 'GET',
+        data: { barangay: selectedBarangay, start_date: startDate, end_date: endDate },
+        success: function (data) {
+            printData(data);
+        },
+        error: function (error) {
+            console.error('Error fetching data:', error);
+        }
+    });
+}
+
+function printData(data) {
+    const excludedColumns = ['created_at', 'updated_at'];
+
+    const headers = [{ columns: ['No', 'Name of Association', 'Barangay', 'Chairman', 'Contact Number', 'Number of Farmers', 'Date Registered'] }];
+
+    let printWindow = window.open('', '_blank');
+
+    let htmlContent = `
+        <html>
+        <head>
+            <title>Association Print</title>
+            <style>
+                body {
+                    text-align: center;
                 }
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+                table, th, td {
+                    border: 1px solid black;
+                }
+                th, td {
+                    padding: 8px;
+                    text-align: left;
+                }
+            </style>
+        </head>
+        <body>
+            <h4>Association</h4>
+            <table>
+    `;
+
+    headers.forEach(header => {
+        if (typeof header === 'object') {
+            header.columns.forEach(column => {
+                htmlContent += `<th>${column}</th>`;
             });
         }
-  
-        // Function to print the data fetched from the server
-        function printData(data) {
-            // Columns to exclude (you can adjust these according to your requirements)
-            const excludedColumns = ['created_at', 'updated_at'];
-  
-            const headers = [{columns:['No', 'Name of Association','Barangay', 'Chairman', 'Contact Number','Number of Farmers', 'Date Registered']}];
-  
-            // Create a new window for printing
-            let printWindow = window.open('', '_blank');
-            
-  
-            // Construct the HTML content to be printed with CSS styles for table borders
-            let htmlContent = `
-                <html>
-                <head>
-                    <title>Association Print</title>
-                    <style>
-                      body{
-                          text-align:center;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                        }
-                        table, th, td {
-                            border: 1px solid black;
-                        }
-                        th, td {
-                            padding: 8px;
-                            text-align: left;
-                        }
-                    </style>
-                </head>
-                <body>
-  
-              <h4>Association</h4>
-  
-  
-                    <table>
-            `;
-  
-           
-  
-                // Generate sub-headers for "Farmer's Name" columns
-      headers.forEach(header => {
-          if (typeof header === 'object') {
-              header.columns.forEach(column => {
-                  htmlContent += `<th>${column}</th>`;
-              });
-          }
-      });
-  
-            // Assuming each data row is an object
-            data.forEach(row => {
-                htmlContent += '<tr>';
-                for (const key in row) {
-                    if (row.hasOwnProperty(key) && !excludedColumns.includes(key)) {
-                        htmlContent += '<td>' + row[key] + '</td>';
-                    }
-                }
-                htmlContent += '</tr>';
-            });
-  
-            htmlContent += `
-                    </table>
-                </body>
-                </html>
-            `;
-  
-            // Write the HTML content to the new window and print it
-            printWindow.document.write(htmlContent);
-            printWindow.document.close();
-            printWindow.print();
+    });
+
+    data.forEach(row => {
+        htmlContent += '<tr>';
+        for (const key in row) {
+            if (row.hasOwnProperty(key) && !excludedColumns.includes(key)) {
+                htmlContent += '<td>' + row[key] + '</td>';
+            }
         }
+        htmlContent += '</tr>';
+    });
+
+    htmlContent += `
+            </table>
+        </body>
+        </html>
+    `;
+
+    printWindow.document.write(htmlContent);
+    printWindow.document.close();
+    printWindow.print();
+}
+
    
    
     $('#AssocForm').submit(function(e) {

@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('archived_assocs', function (Blueprint $table) {
             $table->id();
-            $table->string('association');
+            $table->string('association')-> nullable();
             $table->string('barangay');
-            $table->string('chairman');
-            $table->string('contact');
-            $table->string('no_of_farmers');
-            $table->string('registered');
+            $table->string('chairman')-> nullable();
+            $table->string('contact')-> nullable();
+            $table->string('no_of_farmers')-> nullable();
+            $table->string('registered')-> nullable();
             $table->timestamps();
         });
     }

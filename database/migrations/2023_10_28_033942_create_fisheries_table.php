@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('registration_date') ->nullable();
             $table->string('registration_type') ->nullable();
             $table->string('salutation') ->nullable();
-            $table->string('last_name');
-            $table->string('first_name');
+            $table->string('last_name')-> nullable();
+            $table->string('first_name')-> nullable();
             $table->string('middle_name')->nullable();
             $table->string('appellation')->nullable();
             $table->string('barangay') ->nullable();

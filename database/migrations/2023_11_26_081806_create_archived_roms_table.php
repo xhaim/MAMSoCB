@@ -13,22 +13,22 @@ return new class extends Migration
     {
         Schema::create('archived_roms', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('address');
-            $table->string('animal_id');
-            $table->string('breed');
-            $table->integer('born');
-            $table->string('bcs');
-            $table->string('lastcalving');
-            $table->string('romsdate'); 
-            $table->string('ovarian');
-            $table->string('result');
-            $table->string('ai');
-            $table->string('ut');
-            $table->string('w_iec');
-            $table->string('bullid');
-            $table->string('straws');
-            $table->string('remark');
+            $table->string('name')-> nullable();
+            $table->string('address')-> nullable();
+            $table->string('animal_id')-> nullable();
+            $table->string('breed')-> nullable();
+            $table->integer('born')-> nullable();
+            $table->string('bcs')-> nullable();
+            $table->string('lastcalving')-> nullable();
+            $table->string('romsdate')-> nullable(); 
+            $table->string('ovarian')-> nullable();
+            $table->string('result')-> nullable();
+            $table->string('ai')-> nullable();
+            $table->string('ut')-> nullable();
+            $table->string('w_iec')-> nullable();
+            $table->string('bullid')-> nullable();
+            $table->string('straws')-> nullable();
+            $table->string('remark')-> nullable();
             $table->timestamps();
         });
     }

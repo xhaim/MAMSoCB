@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('archived_vaccs', function (Blueprint $table) {
             $table->id();
-            $table->string('owner_name');
-            $table->string('birthday');
-            $table->string('dog_name');
-            $table->string('origin');
-            $table->string('breed');
-            $table->string('color');
+            $table->string('owner_name')-> nullable();
+            $table->string('birthday')-> nullable();
+            $table->string('dog_name')-> nullable();
+            $table->string('origin')-> nullable();
+            $table->string('breed')-> nullable();
+            $table->string('color')-> nullable();
             $table->integer('ageyr')->nullable(); 
             $table->integer('age_month')->nullable();
             $table->string('sex_male')->nullable(); 

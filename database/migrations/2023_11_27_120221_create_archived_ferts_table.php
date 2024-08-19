@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('archived_ferts', function (Blueprint $table) {
             $table->id();
-            $table->string('seeds_received');
-            $table->string('date_received');
-            $table->string('source_of_funds');
+            $table->string('seeds_received')-> nullable();
+            $table->string('date_received')-> nullable();
+            $table->string('source_of_funds')-> nullable();
             $table->timestamps();
         });
     }

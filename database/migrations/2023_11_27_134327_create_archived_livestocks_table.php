@@ -13,16 +13,16 @@ return new class extends Migration
     {
         Schema::create('archived_livestocks', function (Blueprint $table) {
             $table->id();
-            $table->string('rsbsa');
+            $table->string('rsbsa')-> nullable();
             $table->string('generated')->nullable();
             $table->string('barangay');
-            $table->string('name');
-            $table->string('birth');
-            $table->string('age');
-            $table->string('sex');
-            $table->string('commodity');
-            $table->double('head');
-            $table->string('deceased');
+            $table->string('name')-> nullable();
+            $table->string('birth')-> nullable();
+            $table->string('age')-> nullable();
+            $table->string('sex')-> nullable();
+            $table->string('commodity')-> nullable();
+            $table->double('head')-> nullable();
+            $table->string('deceased')-> nullable();
             $table->timestamps();
         });
     }

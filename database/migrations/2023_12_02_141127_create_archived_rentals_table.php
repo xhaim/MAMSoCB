@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('archived_rentals', function (Blueprint $table) {
             $table->id();
-            $table->string('applicant');
-            $table->string('address');
-            $table->string('location');
-            $table->string('project_description');
-            $table->string('contact');
-            $table->string('actual_land_area_of_farm');
+            $table->string('applicant')-> nullable();
+            $table->string('address')-> nullable();
+            $table->string('location')-> nullable();
+            $table->string('project_description')-> nullable();
+            $table->string('contact')-> nullable();
+            $table->string('actual_land_area_of_farm')-> nullable();
             $table->string('date_inspected')->nullable();
             $table->string('inspector')->nullable();
             $table->double('fuel_requirement', 10, 2)->nullable();
@@ -37,7 +37,7 @@ return new class extends Migration
             $table->string('municipal_accountant')->nullable();
             $table->string('municipal_budget_officer')->nullable();
             $table->string('municipal_mayor')->nullable();
-            $table->string('schedule_of_operation');
+            $table->string('schedule_of_operation')-> nullable();
             $table->string('plate_number_tractor')->nullable();
             $table->string('mao_tractor_incharge')->nullable();
             $table->double('actual_land_area_served', 10, 2)->nullable();

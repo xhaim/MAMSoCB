@@ -16,13 +16,13 @@ return new class extends Migration
             $table->string('rsbsa');
             $table->string('generated')->nullable();
             $table->string('barangay');
-            $table->string('name');
-            $table->string('birth');
-            $table->string('age');
-            $table->string('sex');
-            $table->string('commodity');
-            $table->double('head');
-            $table->string('deceased');
+            $table->string('name')-> nullable();
+            $table->string('birth')-> nullable();
+            $table->string('age')-> nullable();
+            $table->string('sex')-> nullable();
+            $table->string('commodity')-> nullable();
+            $table->double('head')-> nullable();
+            $table->string('deceased')-> nullable();
             $table->timestamps();
         });
     }

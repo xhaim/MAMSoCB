@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('archived_rice_seeds', function (Blueprint $table) {
             $table->id();
-            $table->string('variety');
-            $table->integer('seeds_received');
-            $table->date('date_received');
-            $table->string('source_of_funds');
+            $table->string('variety')-> nullable();
+            $table->integer('seeds_received')-> nullable();
+            $table->date('date_received')-> nullable();
+            $table->string('source_of_funds')-> nullable();
             // Add any additional columns needed for the archived table
             $table->timestamps();
         });

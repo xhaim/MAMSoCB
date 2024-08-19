@@ -309,6 +309,9 @@ return new class extends Migration
 
             $table->timestamps();
         });
+
+        // After table creation, set row format
+        DB::statement('ALTER TABLE registries ROW_FORMAT=DYNAMIC');
     }
 
     /**

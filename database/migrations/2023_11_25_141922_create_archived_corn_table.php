@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('rsbsa')-> nullable();
             $table->string('generated')-> nullable();
             $table->string('association')-> nullable();
-            $table->string('barangay')-> nullable();
+            $table->string('barangay');
             $table->string('name')-> nullable();
             $table->string('birth')-> nullable();
             $table->string('season')-> nullable();
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('archived_corn')-> nullable();
+        Schema::dropIfExists('archived_corn');
     }
 };
